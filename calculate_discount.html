@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cálculo da Tarifa Social</title>
+    <!-- Link direto para o arquivo CSS na pasta static -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo da Tarifa Social</h1>
+    </header>
+    <div class="container">
+        <h2>Digite seu consumo de energia mensal</h2>
+        <form method="POST" action="#">
+            <label for="consumo">Quantidade de KW/h consumida neste mês:</label>
+            <input type="number" id="consumo" name="consumo" placeholder="Digite o consumo em KW/h" required>
+            <button type="submit" class="send">Calcular</button>
+        </form>
+        
+        <!-- Mensagem de erro removida já que ela dependia de variáveis Flask -->
+        <!-- Você pode adicionar alguma validação via JavaScript no futuro, se necessário -->
+
+        <a href="index.html" class="primary">Voltar à página inicial</a>
+    </div>
+</body>
+</html>
